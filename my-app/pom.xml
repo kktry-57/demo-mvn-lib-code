@@ -6,7 +6,7 @@
 
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.4</version>
 
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
@@ -28,7 +28,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+	
   <build>
 		<plugins>
 			<plugin>
@@ -56,15 +56,15 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.12</version>
 				<configuration>
-					<message>Maven artifacts for ${project.version}</message> <!-- git commit message -->
-					<noJekyll>true</noJekyll>  <!-- disable webpage processing -->
-					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-					<branch>refs/heads/mvn-repo</branch> <!-- remote branch name -->
+					<message>Maven artifacts for ${project.version}</message> 
+					<noJekyll>true</noJekyll>  
+					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+					<branch>refs/heads/mvn-repo</branch>
 					<includes><include>**/*</include></includes>
-					<repositoryName>mvn-repo</repositoryName> <!-- github repo name -->
-					<repositoryOwner>kktry-57</repositoryOwner> <!-- organization or user name  -->
+					<repositoryName>mvn-repo</repositoryName> 
+					<repositoryOwner>kktry-57</repositoryOwner>
 				</configuration>
-				<executions> <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
+				<executions> 
 				<execution>
 					<goals>
 					<goal>site</goal>
