@@ -1,7 +1,7 @@
-package com.mycompany.app.Bean;
+package com.mycompany.app.bean;
 
 public class HelloBean {
     public String Hello(){
-        return "hello 15 from mvn deploy to github";
+        return "hello 0.0.3 from mvn deploy to syscom github";
     }
 }
